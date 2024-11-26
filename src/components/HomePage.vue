@@ -69,7 +69,7 @@
         </div>
 
         <div class="navbar">
-          <button @click="toggleDarkMode" class="toggle-button">
+          <button @click="toggleDarkMode" class="toggle-bcutton">
             <i :class="isDarkMode ? 'fas fa-sun' : 'fas fa-moon'"></i>
           </button>
           <button class="logout-btn" @click="logout">
