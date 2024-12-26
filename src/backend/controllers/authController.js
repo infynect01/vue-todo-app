@@ -16,7 +16,7 @@ export const register = async (req, res) => {
 
 export const login = async (req, res) => {
   try {
-    const { email, password } = req.body
+    const { email, password } = req.body;
     const user = await User.findByEmail(email) // Find user by email
     if (!user || !bcrypt.compareSync(password, user.password)) {
       return res.status(400).json({ error: 'Invalid email or password.' })
